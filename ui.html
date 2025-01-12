@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Calculator</title>
+  <style>
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: #fff;
+        padding: 24px;
+        margin: 0;
+        font-size: 14px;
+      }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: #1f2937;
+        text-align: left;
+      }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+      color: #374151;
+    }
+
+    button {
+        width: 100%;
+        background-color: #2563eb;
+        color: white;
+        padding: 16px 16px;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        margin-top: 8px;
+      }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Select a text layer, type a formula (e.g., <code>5+5</code>), and click the button to calculate the result.
+  </p>
+  <button id="calculate">Calculate</button>
+
+  <script>
+    document.getElementById("calculate").onclick = () => {
+      parent.postMessage({ pluginMessage: { type: "calculate" } }, "*");
+    };
+  </script>
+</body>
+</html>
