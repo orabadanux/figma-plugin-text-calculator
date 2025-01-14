@@ -3,7 +3,7 @@
 This Figma plugin enables users to perform calculations directly within text fields without altering the text's style. It's perfect for scenarios like calculating discounts, adjusting prices, or performing any arithmetic operation directly in your design.
 
 
-➡️ Visit the Figma Plugin Page [tbd]
+➡️ Visit the Figma Plugin Page: https://www.figma.com/community/plugin/1459577524038875287/text-calculator
 
 ## Features
 
